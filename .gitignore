@@ -1,0 +1,19 @@
+# Qt & C++
+build*/
+*.pro.user
+*.user
+*.user.*
+*.qmlc
+*.jsc
+Makefile*
+*.o
+*.obj
+*.so
+*.a
+*.dll
+*.exe
+*.log
+*.tmp
+*.bak
+*.swp
+*.qmake.stash
