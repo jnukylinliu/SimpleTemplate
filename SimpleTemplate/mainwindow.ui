@@ -14,31 +14,30 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>90</y>
-      <width>80</width>
-      <height>23</height>
+      <x>10</x>
+      <y>10</y>
+      <width>761</width>
+      <height>531</height>
      </rect>
     </property>
-    <property name="text">
-     <string>PushButton</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_2">
-    <property name="geometry">
-     <rect>
-      <x>360</x>
-      <y>200</y>
-      <width>80</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>PushButton</string>
-    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QWidget" name="widget" native="true"/>
+     </item>
+     <item>
+      <widget class="DashboardWidget" name="widget_3" native="true"/>
+     </item>
+     <item>
+      <widget class="DashboardWidget" name="widget_2" native="true">
+       <property name="cursor">
+        <cursorShape>OpenHandCursor</cursorShape>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -53,6 +52,14 @@
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>DashboardWidget</class>
+   <extends>QWidget</extends>
+   <header>dashboardwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

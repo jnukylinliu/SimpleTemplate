@@ -27,7 +27,6 @@ public:
     QWidget *verticalLayoutWidget;
     QVBoxLayout *verticalLayout;
     QWidget *widget;
-    DashboardWidget *widget_3;
     DashboardWidget *widget_2;
     QMenuBar *menubar;
     QStatusBar *statusbar;
@@ -49,11 +48,6 @@ public:
         widget->setObjectName(QString::fromUtf8("widget"));
 
         verticalLayout->addWidget(widget);
-
-        widget_3 = new DashboardWidget(verticalLayoutWidget);
-        widget_3->setObjectName(QString::fromUtf8("widget_3"));
-
-        verticalLayout->addWidget(widget_3);
 
         widget_2 = new DashboardWidget(verticalLayoutWidget);
         widget_2->setObjectName(QString::fromUtf8("widget_2"));
