@@ -2,7 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <dashboardwidget.h>
+#include <CustomizeFunction\dashboardwidget.h>
 #include <qtimer.h>
 
 QT_BEGIN_NAMESPACE
