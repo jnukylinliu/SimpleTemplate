@@ -4,7 +4,9 @@
 #include <QMainWindow>
 #include <CustomizeFunction\dashboardwidget.h>
 #include <qtimer.h>
-
+#include <QScreen>
+#include "cryptochart.h"
+#include "cryptovolumechart.h"
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;
@@ -22,5 +24,7 @@ public:
 private:
     Ui::MainWindow *ui;
     DashboardWidget *m_dashboard;
+    void MainWindowInit();
+
 };
 #endif // MAINWINDOW_H

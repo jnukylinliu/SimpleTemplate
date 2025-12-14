@@ -10,7 +10,6 @@
 #include "GlobalManager/GlobalManager.h"
 
 
-
 void test(){
     // 设置变量
     GlobalManager::instance().setVar("userId", 1001);
@@ -27,7 +26,10 @@ void test(){
 
     // 打印所有变量
     GlobalManager::instance().printAll();
+
 }
+
+
 
 
 
@@ -65,6 +67,7 @@ int main(int argc, char *argv[])
     });
 
     test();
+    qDebug() << "Supports SSL:" << QSslSocket::supportsSsl();
 
 
     return a.exec();

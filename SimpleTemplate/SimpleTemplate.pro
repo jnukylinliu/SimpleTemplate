@@ -1,4 +1,4 @@
-QT += core gui widgets multimedia multimediawidgets
+QT += core gui widgets multimedia multimediawidgets charts websockets
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -35,24 +35,34 @@ LIBS += -L$$PWD/libs -lMathStaticLib
 SOURCES += \
     CustomizeFunction/dashboardwidget.cpp \
     GlobalManager/globalmanager.cpp \
+    cryptochart.cpp \
+    cryptovolumechart.cpp \
     main.cpp \
     mainwindow.cpp \
-    SplashVideoWidget/splashvideowidget.cpp
+    SplashVideoWidget/splashvideowidget.cpp \
+    titlebar.cpp
 
 # 头文件
 HEADERS += \
     SharedStatus.h \
     CustomizeFunction/dashboardwidget.h \
     GlobalManager/globalmanager.h \
+    cryptochart.h \
+    cryptovolumechart.h \
     mainwindow.h \
-    SplashVideoWidget/splashvideowidget.h
+    SplashVideoWidget/splashvideowidget.h \
+    titlebar.h
 
 # UI 文件
 FORMS += \
-    mainwindow.ui
+    mainwindow.ui \
+    titlebar.ui
 
 # ------------------------------
 # 默认部署规则
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    resource.qrc

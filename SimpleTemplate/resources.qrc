@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Gui/icons/icons8-close-48.png</file>
+        <file>Gui/icons/icons8-maximize-48.png</file>
+        <file>Gui/icons/icons8-minimize-window-48.png</file>
+    </qresource>
+</RCC>
